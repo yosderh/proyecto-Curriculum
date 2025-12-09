@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=identity_platform" />
     <title>Portafolio Yosder</title>
 </head>
-<body>
+<body id="body">
     
     <header class="header">
         <div>
@@ -17,9 +17,9 @@
         </div>
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="curriculum.html">Curriculum</a></li>
-                    <li><a href="proyecto.html">Proyectos</a></li>
-                    <li><a href="contacto.html">Contactos</a></li>
+                   <li><a href="curriculum.html" data-section="curriculum">Curriculum</a></li>
+                    <li><a href="proyecto.html" data-section="proyectos">Proyectos</a></li>
+                    <li><a href="contacto.html" data-section="contactos">Contactos</a></li>
                 </ul>
             </nav>
     </header>
@@ -28,7 +28,7 @@
 
 
 
-    <main class="main-container">  
+    <main id="main" class="main-container">  
         <div class="img-perfil"><img src="https://picsum.photos/200/300" alt="imagen aleatoria"></div>
 
         <div class="text-content">
@@ -61,14 +61,13 @@
                 <span>yosderh@misitio.com</span>
             </div>
             <div class="footer-content">
-                <h3>sìgueme</h3>
-                <span>
-                    <a href="#">Facebook</a> | 
-                    <a href="#">Instagram</a> | 
-                    <a href="#">Twitter</a>
+                <h3>Redes Sociales</h3>
+                <span id="rrss">
                 </span>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

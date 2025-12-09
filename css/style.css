@@ -83,6 +83,9 @@ display: flex;
 flex-direction: column;
 
 }
+.body-curri{
+    background-color: var(--azul-Medio);
+}
 
 
 /* 5. Cabecera de página ................................................................. */
@@ -94,16 +97,18 @@ flex-direction: column;
 .header{
  /*   background-color: var(--azul-Medio); */
     color: var(--azul-Oscuro );
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--azul-Claro);
 }
 
 header div{
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding: 2.5rem;
 }
 .material-symbols-outlined{
     color: var(--vinotinto);
@@ -124,17 +129,29 @@ header div{
     display: flex;
     list-style: none;
 }   
-.nav-bar ul li{
-    cursor: pointer;
+.nav-bar ul a{
     padding: 1.5rem;
+    transition: none;
+
 }
-.nav-bar ul li:hover{
+.nav-bar ul a:hover{
     font-weight: bold;
     color: var(--vinotinto);
     background-color: var(--azul-Medio);
     border-radius: 0.8rem;
 
 }
+
+.nav-bar ul a.active{
+    background-color: var(--azul-Medio);
+    padding-bottom: 3rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.section {
+    background-color: var(--azul-Medio);
+}
+
 
 
 
@@ -148,7 +165,9 @@ header div{
 - Menú información legal
 - Otros elementos que pueda haber (rrss, información adicional...)
 */
-
+footer{
+    background-color: var(--azul-Claro);
+}
 .footer-container{
   /*  background-color: var(--azul-Medio); */   
   border-top: #3d0007 2px solid;
@@ -195,6 +214,8 @@ header div{
 .main-container{
     padding: 2rem;
     margin: 2rem;
+    margin-top: 0;
+    padding-top: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -211,8 +232,8 @@ header div{
 .img-perfil img{
    display: inline-block;
     border-radius: 50%;
-    width: 50rem;
-    height: 50rem;
+    width: 40rem;
+    height: 40rem;
 }
 
 .text-content{
