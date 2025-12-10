@@ -1,7 +1,7 @@
 const mains = {
         'index':
         
-            `  <div class="img-perfil"><img src="https://picsum.photos/200/300" alt="imagen aleatoria"></div>
+            `  <div class="img-perfil"><img src='../css/perfilPortafolio.jpg' alt="imagen aleatoria"></div>
 
         <div class="text-content">
                 <h2>bienvenido</h2>
