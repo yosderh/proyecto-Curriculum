@@ -1,37 +1,28 @@
+const mains = {
+        'index':
+        
+            `  <div class="img-perfil"><img src="https://picsum.photos/200/300" alt="imagen aleatoria"></div>
 
-    const container = document.querySelector('.footer-content #rrss');
+        <div class="text-content">
+                <h2>bienvenido</h2>
+                <div>
+                    <h3>¿quien soy?</h3>
+                    <p>Soy un desarrollador en formación con una gran pasión por la tecnología y el diseño web. Me entusiasma trabajar y aprender distintos lenguajes de programación y transformar ideas en proyectos reales con ellos. Busco mejorar cada día mis habilidades, construir soluciones funcionales, bonitas y modernas y así expandir mis experiencias digitales 
+                    </p>
+                </div>
 
-    for(let i=0; i<5; i++){
-        let linkIcon = document.createElement('a'); 
-        let img = document.createElement('img');
-        img.src= `/css/iconsRRSS/icon${i}.png`;
-        img.style.marginRight = '0.8rem';
-        linkIcon.appendChild(img);
-        container.appendChild(linkIcon);
-    }
+            <div class="enlaces">
+                <ul>
+                    <li><a href="#" data-section="curriculum">Curriculum</a></li>
+                    <li><a href="#" data-section="proyectos">Proyectos</a></li>
+                    <li><a href="#" data-section="contactos">Contactos</a></li>
+                </ul>
+            </div>
+        </div>`,
 
-    const linksPag = document.querySelectorAll('.nav-bar ul a');
-    const body = document.getElementById('body');
-    const main = document.getElementById('main');
-
-    linksPag.forEach( link => {
-
-        link.addEventListener('click', e => {
-            e.preventDefault();
-
-            linksPag.forEach(l => l.classList.remove('active'));
-
-            link.classList.add('active');
-            body.classList.add('section');
-
-            const seccion = link.dataset.section;
-
-            console.log(link);
-
-            switch (seccion) {
-                case "curriculum" :
-                    main.innerHTML = `  
-                        <div class="sub-title">
+            'curriculum':
+                
+                `<div class="sub-title">
                         
                         </div>
 
@@ -43,12 +34,11 @@
                                 </p>
                             </div>
 
-                        </div>`
-                        break;
-                case "contactos" :
-                    main.innerHTML = ""
-                    main.innerHTML = 
-                    ` <div class="sub-title">
+                        </div>`,
+
+            'contacto': 
+
+                ` <div class="sub-title">
                     
                     </div>
 
@@ -59,11 +49,10 @@
                                 <p>Soy un desarrollador en formación con una gran pasión por la tecnología y el diseño web. Me entusiasma trabajar y aprender distintos lenguajes de programación y transformar ideas en proyectos reales con ellos. Busco mejorar cada día mis habilidades, construir soluciones funcionales, bonitas y modernas y así expandir mis experiencias digitales 
                                 </p>
                             </div>
-                        </div>`
-                        break;
-                case "proyectos" :
-                    main.innerHTML = ` 
-                        <div class="sub-title">
+                        </div>`,
+
+            'proyecto': 
+                    `<div class="sub-title">
                         
                         </div>
 
@@ -76,9 +65,5 @@
                             </div>
 
                         </div>`
-                        break;
-            }
-        })
-    })
-
     
+    }
