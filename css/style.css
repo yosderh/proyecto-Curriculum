@@ -271,7 +271,7 @@ footer{
     gap: 5rem;
 }
 
-.enlaces ul li a{
+.enlaces ul li a, .button{
     font-size: 2rem;
     font-weight: bold;
     padding: 2rem 3rem;
@@ -280,7 +280,7 @@ footer{
     background-color: var(--azul-Medio);
     color: var(--azul-Oscuro);
 }
-.enlaces ul li a:hover{
+.enlaces ul li a:hover, .button:hover{
     background-color: var(--rosado);
     border-color: var(--vinotinto);
     color: var(--vinotinto);
@@ -302,14 +302,58 @@ footer{
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 2rem;
+    color: var(--vinotinto);
 }
 
 /*estilo de los div del formulario*/
+.info-contact{
+    align-items: end;
+    margin-right: 2rem;
+}
+
+.main-rrss div{
+    display: flex;
+    justify-content: end;
+}
+.main-rrss p{
+    font-size: 2rem;
+}
+
 .tag {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
+
+.tag label {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--vinotinto);
+}
+.tag input, .tag textarea {
+    font-family: var(--tipografiaPrincipal);
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    border: #3d0007 2px solid;
+    border-radius: 0.5rem;
+    max-width: 60%;
+}
+.tag input:focus, .tag textarea:focus {
+    outline: none;
+    border-color: var(--vinotinto);
+}
+.tag textarea {
+    resize: vertical;
+    min-height: 10rem;
+}
+
+.button{
+    display: inline-block;
+    margin: 2rem auto 0 1rem;
+    background-color: var(--azul-Claro);
+}
+
+
 
 
 

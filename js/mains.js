@@ -1,3 +1,11 @@
+// Generador local de HTML para iconos RRSS (usado en la plantilla de contacto)
+function generateIconsHTML(count = 5){
+    let html = '';
+    for(let i = 0; i < count; i++){
+        html += `<a href="#"><img src="/css/iconsRRSS/icon${i}.png" style="margin-right: 0.8rem;"></a>`;
+    }
+    return html;
+}
 const mains = {
         'index':
         
@@ -39,13 +47,18 @@ const mains = {
             'contacto': 
 
             `  <h2>Contacto</h2>
-                <div class="text-content">
-
-                    <p>puedes contactarme a través de mis redes sociales</p>
-                    <!--aqui van los iconos de las redes sociales--> 
-
-                    <h3>Email</h3>
-                    <p>yosderh@gmail.com</p>
+                <div class="text-content info-contact">
+                    <div class="main-rrss">
+                        <p>redes sociales</p>
+                        <div>
+                            ${generateIconsHTML()}
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <h3>Email </h3>
+                        <p>yosderh@gmail.com</p>
+                    </div>
                     </div>
 
                         <div class="text-content">
@@ -70,6 +83,7 @@ const mains = {
                                 <label for="mensaje">Mensaje</label>
                                  <textarea name="mensaje" id="mensaje"></textarea>
                             </div>
+                                 <button class="button" type="submit">Enviar</button>
                             </form>
                         </div>`,
 

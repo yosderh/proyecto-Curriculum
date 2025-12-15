@@ -11,13 +11,18 @@ const main = document.getElementById('main');
 
 
 /*imprimimos en pantalla los iconos de las redes sociales en el footer */
+function createIconRRSS(father){
 for(let i=0; i<5; i++){
     let linkIcon = document.createElement('a'); 
     let img = document.createElement('img');
     img.src= `/css/iconsRRSS/icon${i}.png`;
     img.style.marginRight = '0.8rem';
     linkIcon.appendChild(img);
-    container.appendChild(linkIcon);
+    father.appendChild(linkIcon);
+}
+}  
+if(container){
+    createIconRRSS(container);
 }
 
 document.body.addEventListener('click', function(e){
