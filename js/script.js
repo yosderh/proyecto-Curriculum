@@ -34,6 +34,7 @@ document.body.addEventListener('click', function(e){
                 case "curriculum" :
                     if(nameLink){
                         nameLink.classList.add('active');
+                        main.classList.remove('container-contac')
                     }
                     main.innerHTML = mains.curriculum
 
@@ -41,6 +42,7 @@ document.body.addEventListener('click', function(e){
                 case "contactos" :
                      if(nameLink){
                         nameLink.classList.add('active');
+                        main.classList.add('container-contac')
                     }
                     main.innerHTML = mains.contacto;
                     
@@ -48,6 +50,7 @@ document.body.addEventListener('click', function(e){
                 case "proyectos" :
                      if(nameLink){
                         nameLink.classList.add('active');
+                        main.classList.remove('container-contac')
                     }
                     main.innerHTML = mains.proyecto;
                         break;
