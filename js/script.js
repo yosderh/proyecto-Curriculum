@@ -1,4 +1,4 @@
-
+import { mains, ShowProyects } from "./mains.js";
 
 /** SELECCION DEL DOM */
 const container = document.querySelector('.footer-content #rrss');
@@ -40,6 +40,7 @@ document.body.addEventListener('click', function(e){
                     if(nameLink){
                         nameLink.classList.add('active');
                         main.classList.remove('container-contac')
+                        main.classList.remove('main-proyects');
                     }
                     main.innerHTML = mains.curriculum
 
@@ -48,6 +49,7 @@ document.body.addEventListener('click', function(e){
                      if(nameLink){
                         nameLink.classList.add('active');
                         main.classList.add('container-contac')
+                        main.classList.remove('main-proyects');
                     }
                     main.innerHTML = mains.contacto;
                     
@@ -55,13 +57,16 @@ document.body.addEventListener('click', function(e){
                 case "proyectos" :
                      if(nameLink){
                         nameLink.classList.add('active');
-                        main.classList.remove('container-contac')
+                        main.classList.remove('container-contac');
+                        main.classList.add('main-proyects');
                     }
                     main.innerHTML = mains.proyecto;
+                    ShowProyects();
                         break;
                 case "index" :
                 main.innerHTML = mains.index;
                 body.classList.remove('bodyChanged');
+                main.classList.remove('main-proyects');
                    linksPag.forEach(l => l.classList.remove('active'));
             }
         }

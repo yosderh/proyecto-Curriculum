@@ -1,3 +1,23 @@
+import { proyects } from "./proyects.js";
+
+export function ShowProyects(){
+    const list = document.querySelector('.projects-list');
+    if(!list) return;
+    list.innerHTML = proyects.map(proyect =>
+        ` <div class="project-card">
+            <h3 >${proyect.name}</h3>
+            <a href="${proyect.url}" target="_blank">
+                <img src="${proyect.img}" alt="${proyect.name}">
+            </a>
+            <p>${proyect.descripcion}</p>
+        </div>`
+    ).join("");
+} 
+
+
+
+
+
 // Generador local de HTML para iconos RRSS (usado en la plantilla de contacto)
 function generateIconsHTML(count = 5){
     let html = '';
@@ -6,7 +26,9 @@ function generateIconsHTML(count = 5){
     }
     return html;
 }
-const mains = {
+
+
+export const mains = {
         'index':
         
             `  <div class="img-perfil"><img src='../css/perfilPortafolio.jpg' alt="imagen aleatoria"></div>
@@ -30,11 +52,8 @@ const mains = {
 
             'curriculum':
                 
-                `<div class="sub-title">
-                        
-                        </div>
-
-                        <div class="text-content">
+                `
+                        <div class="text-content info-contact">
                             <h2>Curriculum</h2>
                             <div>
                                 <h3>¿quien soy?</h3>
@@ -88,18 +107,7 @@ const mains = {
                         </div>`,
 
             'proyecto': 
-                    `<div class="sub-title">
-                        
-                        </div>
 
-                        <div class="text-content">
-                            <h2>Proyectos</h2>
-                            <div>
-                                <h3>¿quien soy?</h3>
-                                <p>Soy un desarrollador en formación con una gran pasión por la tecnología y el diseño web. Me entusiasma trabajar y aprender distintos lenguajes de programación y transformar ideas en proyectos reales con ellos. Busco mejorar cada día mis habilidades, construir soluciones funcionales, bonitas y modernas y así expandir mis experiencias digitales 
-                                </p>
-                            </div>
-
-                        </div>`
-    
-    }
+                    `<h2>Proyectos</h2>
+                        <div class="projects-list"></div>`
+}

@@ -355,7 +355,49 @@ footer{
 
 
 
+/*main de proyectos */
+.main-proyects{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-items: center;
+    margin-top: 5rem;
+}
+.main-proyects img{
+    border-radius: 1rem;
+    width: 50%;
+    object-fit: cover;
+}
 
+.main-proyects h2{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--vinotinto);
+    margin-top: 2rem;
+}   
+
+.main-proyects h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0 1.5rem 0 ;
+    color: var(--vinotinto);
+    text-transform: uppercase;
+}
+.main-proyects p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    margin-top: 1rem;
+    max-width: 50rem;
+    color: var(--vinotinto);
+}   
 
 
 /* 8. Formularios ..................................................................... */
