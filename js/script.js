@@ -41,23 +41,30 @@ document.body.addEventListener('click', function(e){
                         nameLink.classList.add('active');
                         main.classList.remove('container-contac')
                         main.classList.remove('main-proyects');
+                        main.classList.remove('main-container');
+                        main.classList.add('main-curriculum');
                     }
                     main.innerHTML = mains.curriculum
 
                         break;
                 case "contactos" :
                      if(nameLink){
+                         main.classList.remove('main-proyects');
+                         main.classList.remove('main-curriculum');
                         nameLink.classList.add('active');
                         main.classList.add('container-contac')
-                        main.classList.remove('main-proyects');
+                        main.classList.add('main-container');
                     }
                     main.innerHTML = mains.contacto;
                     
                         break;
                 case "proyectos" :
                      if(nameLink){
-                        nameLink.classList.add('active');
-                        main.classList.remove('container-contac');
+                         main.classList.remove('container-contac');
+                         main.classList.remove('main-proyects');
+                         main.classList.remove('main-curriculum');
+                         nameLink.classList.add('active');
+                        main.classList.add('main-container');
                         main.classList.add('main-proyects');
                     }
                     main.innerHTML = mains.proyecto;
@@ -67,6 +74,9 @@ document.body.addEventListener('click', function(e){
                 main.innerHTML = mains.index;
                 body.classList.remove('bodyChanged');
                 main.classList.remove('main-proyects');
+                main.classList.remove('container-contac');
+                main.classList.remove('main-curriculum');
+                main.classList.add('main-container');
                    linksPag.forEach(l => l.classList.remove('active'));
             }
         }

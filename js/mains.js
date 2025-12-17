@@ -53,13 +53,68 @@ export const mains = {
             'curriculum':
                 
                 `
-                        <div class="text-content info-contact">
-                            <h2>Curriculum</h2>
-                            <div>
-                                <h3>¿quien soy?</h3>
-                                <p>Soy un desarrollador en formación con una gran pasión por la tecnología y el diseño web. Me entusiasma trabajar y aprender distintos lenguajes de programación y transformar ideas en proyectos reales con ellos. Busco mejorar cada día mis habilidades, construir soluciones funcionales, bonitas y modernas y así expandir mis experiencias digitales 
-                                </p>
-                            </div>
+                    <h2>Curriculum</h2>
+                        <div class="content-curriculum">
+                        <section class="personal-info">
+                             <h3>Experiencia Laboral</h3>
+                            <ul>
+                                <li>Desarrollador Web Junior - Tech Solutions (2021 - 2022)</li>
+                                <li>Desarrollé y mantuve sitios web utilizando HTML, CSS y JavaScript.</li>
+                                <li>Colaboré con el equipo de diseño para implementar interfaces de usuario atractivas y funcionales.</li>
+                                <li>Optimicé el rendimiento del sitio web, mejorando los tiempos de carga en un 20%.</li>
+                                <li>Practicante de Desarrollo de Software - SoftDev Inc. (2020 - 2021)
+                                <li>Asistí en el desarrollo de aplicaciones web utilizando frameworks como React y Node.js.</li>
+                                <li>Participé en revisiones de código y pruebas para garantizar la calidad del software.</li>
+                                <li>Colaboré con equipos multifuncionales para cumplir con los plazos del proyecto.</li>
+                            </ul>
+                        </section>
+
+                        <section class="personal-info">
+                            <h3>Formación Académica</h3>
+                            <ul>
+                                <li>Ingeniería en Sistemas - Universidad Nacional de Colombia (2020 - Presente)</li>
+                                <li>Técnico en Desarrollo de Software - Instituto Técnico Central (2018 - 2020)</li>
+                            </ul>
+                        </section>
+                            
+                        <section class="personal-info">
+                            <h3>Habilidades Técnicas</h3>
+                            <ul>
+                                <li>Lenguajes de Programación: JavaScript, Python, HTML, CSS</li>
+                                <li>Frameworks y Librerías: React, Node.js</li>
+                                <li>Bases de Datos: MySQL, MongoDB</li>
+                                <li>Control de Versiones: Git, GitHub</li>
+                                <li>Herramientas de Desarrollo: Visual Studio Code, Postman</li>
+                                <li>Metodologías Ágiles: Scrum, Kanban</li>
+                                <li>Idiomas: Español (Nativo), Inglés (Intermedio)</li>
+                                <li>Habilidades Blandas: Trabajo en equipo, Resolución de problemas, Comunicación efectiva</li>
+                                <li>Certificaciones: Certificado de Desarrollo Web Full Stack - Codecademy (2021)</li>
+                                <li>Certificado de Fundamentos de Python - Coursera (2020)</li>
+                                <li>Certificado de Inglés Intermedio - Duolingo (2019)</li>
+                                <li>Proyectos Personales: Portafolio en línea, Aplicación de Tareas (To-Do List)</li>
+                                <li>Contribuciones a proyectos de código abierto en GitHub</li>
+                                <li>Participación en hackatones y eventos de tecnología</li>
+                                <li>Voluntariado en organizaciones tecnológicas locales</li>
+                                <li>Intereses: Desarrollo web, Inteligencia Artificial, Diseño UX/UI, Juegos y aplicaciones móviles</li>
+                                <li>Lectura de blogs y libros sobre tecnología y programación</li>
+                                <li>Exploración de nuevas tecnologías y tendencias en el desarrollo de software</li>
+                                <li>Asistencia a conferencias y meetups de desarrolladores</li>
+                                <li>Colaboración en comunidades en línea de desarrolladores</li>
+                                <li>Participación en cursos y talleres de actualización tecnológica</li>
+                                <li>Redes Sociales Profesionales: LinkedIn, GitHub</li>
+                                <li>Blogs y Foros: Stack Overflow, Medium</li>
+                                <li>Canales de YouTube: Traversy Media, The Net Ninja</li>
+                                <li>Podcasts: Syntax, CodeNewbie</li>
+                                <li>Comunidades en Línea: Dev.to, Reddit (r/webdev)</li>
+                                <li>Eventos y Conferencias: JSConf, React Summit</li>
+                                <li>Meetups Locales: Grupos de desarrolladores en mi ciudad</li>
+                                <li>Hackatones: Participación en eventos de desarrollo colaborativo</li>
+                            </ul>
+                        </section>
+                        
+                            
+                            
+                           
 
                         </div>`,
 
@@ -108,6 +163,6 @@ export const mains = {
 
             'proyecto': 
 
-                    `<h2>Proyectos</h2>
+                    `<h2 class="titulo">Proyectos</h2>
                         <div class="projects-list"></div>`
 }

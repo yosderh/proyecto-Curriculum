@@ -174,7 +174,7 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    margin: 2rem 2rem ;
+    margin: 0;
 }
 .footer-container .footer-content{
     display: flex;
@@ -221,6 +221,18 @@ footer{
     align-items: center;
     gap: 5rem;
     min-height: 80vh;
+    flex-grow: 1;
+}
+
+.main-container.container-contac {
+    min-height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+}
+
+.main-container.main-proyects {
+    min-height: auto;
+    grid-template-columns: 1fr;
 }
 
 .main-container .img-perfil{
@@ -356,23 +368,28 @@ footer{
 
 
 /*main de proyectos */
-.main-proyects{
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.titulo{
+    text-align: center;
+    margin-bottom: 2rem;
 }
 .projects-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10rem;
-    justify-items: center;
-    margin-top: 5rem;
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  gap: 2rem;
 }
-.main-proyects img{
-    border-radius: 1rem;
-    width: 50%;
-    object-fit: cover;
+
+.project-card{
+    background-color: var(--azul-Claro);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.projects-list img{
+      width: 70%;
 }
 
 .main-proyects h2{
@@ -398,6 +415,54 @@ footer{
     max-width: 50rem;
     color: var(--vinotinto);
 }   
+
+
+/*main Curriculum*/
+
+.main-curriculum {
+    padding: 2rem;
+    margin: 2rem;
+    margin-top: 0;
+    padding-top: 0;
+    display: grid;
+    justify-content: center;
+    gap: 5rem;
+    min-height: 80vh;
+    flex-grow: 1;
+}
+.main-curriculum h2{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--vinotinto);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.content-curriculum{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: var(--vinotinto);
+}
+.content-curriculum h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.content-curriculum p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    margin-bottom: 3rem;
+    max-width: 70rem;
+}
+.content-curriculum ul{
+    list-style: disc;
+    margin-left: 2rem;
+}
+
 
 
 /* 8. Formularios ..................................................................... */
