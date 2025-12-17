@@ -179,7 +179,7 @@ footer{
 .footer-container .footer-content{
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: end;
 }   
 
 .footer-content h3{

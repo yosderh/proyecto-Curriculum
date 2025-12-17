@@ -136,7 +136,7 @@ export const mains = {
                     </div>
 
                         <div class="text-content">
-                            <form name="contacto" id="contacto" action="yosder@gmail.com" method="post" enctype="text/plain">
+                            <form name="contacto" id="contacto" action="yosder@gmail.com" method="get" enctype="text/plain">
                             <div class="tag">
                                 <label for="nombre">Nombre</label>
                                 <input name="nombre" id="nombre" type="text">
